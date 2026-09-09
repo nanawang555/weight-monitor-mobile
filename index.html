@@ -50,7 +50,8 @@
 
     <section class="card">
       <div class="section-head"><h2>体重趋势</h2><div class="file-actions"><select id="trendRange" aria-label="趋势范围"><option value="month">当前月</option><option value="threeMonths">近三个月</option><option value="all">全部记录</option></select><span id="chartHint"></span></div></div>
-      <div class="chart-wrap"><canvas id="trendChart" aria-label="体重趋势图"></canvas><p id="emptyChart">添加记录后将在这里显示趋势。</p></div>
+      <p class="chart-legend"><span class="legend morning"></span>早上体重 <span class="legend evening"></span>傍晚体重</p>
+      <div class="chart-wrap"><canvas id="trendChart" aria-label="体重趋势图，可直接拖动虚线查看日期体重"></canvas><strong id="chartDetail" class="chart-detail hidden">—</strong><p id="emptyChart">添加记录后将在这里显示趋势。</p></div>
     </section>
 
     <section class="card">
